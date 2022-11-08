@@ -16,6 +16,7 @@
 		4D20BF2B291AF4DF008C39D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D20BF2A291AF4DF008C39D4 /* main.m */; };
 		4D20BF38291AF816008C39D4 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D20BF37291AF816008C39D4 /* NetworkManager.m */; };
 		4D20BF3C291AFA0A008C39D4 /* Movies.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D20BF3B291AFA0A008C39D4 /* Movies.m */; };
+		4D20BF40291AFB02008C39D4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D20BF3F291AFB02008C39D4 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		4D20BF37291AF816008C39D4 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		4D20BF3A291AFA0A008C39D4 /* Movies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movies.h; sourceTree = "<group>"; };
 		4D20BF3B291AFA0A008C39D4 /* Movies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movies.m; sourceTree = "<group>"; };
+		4D20BF3E291AFB02008C39D4 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		4D20BF3F291AFB02008C39D4 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		4D20BF17291AF4DB008C39D4 /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				4D20BF3D291AFAE5008C39D4 /* Home */,
 				4D20BF39291AF9EF008C39D4 /* Models */,
 				4D20BF31291AF6C9008C39D4 /* Services */,
 				4D20BF26291AF4DF008C39D4 /* LaunchScreen.storyboard */,
@@ -108,6 +112,15 @@
 				4D20BF3B291AFA0A008C39D4 /* Movies.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4D20BF3D291AFAE5008C39D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4D20BF3E291AFB02008C39D4 /* HomeViewController.h */,
+				4D20BF3F291AFB02008C39D4 /* HomeViewController.m */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +198,7 @@
 				4D20BF1A291AF4DC008C39D4 /* AppDelegate.m in Sources */,
 				4D20BF2B291AF4DF008C39D4 /* main.m in Sources */,
 				4D20BF38291AF816008C39D4 /* NetworkManager.m in Sources */,
+				4D20BF40291AFB02008C39D4 /* HomeViewController.m in Sources */,
 				4D20BF1D291AF4DC008C39D4 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
