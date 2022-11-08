@@ -2,7 +2,7 @@
 //  HomeViewController.m
 //  MoviesApp
 //
-//  Created by Mohamed Rabie on 11/8/22.
+//  Created by Mohamed Rabie on 11/9/22.
 //
 
 #import "HomeViewController.h"
@@ -39,7 +39,7 @@
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection{
     
     _movies = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingAllowFragments error:nil];
-    
+    [self.tableView reloadData];
 }
 
 
@@ -84,14 +84,5 @@
     
     ((DetailsViewController*) segue.destinationViewController).movies = movie;
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -6,6 +6,7 @@
 //
 
 #import "DetailsViewController.h"
+#import "SDWebImage.h"
 
 @interface DetailsViewController ()
 
@@ -15,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.movieTitle.text = self.movies.title;
+    [self.movieImage sd_setImageWithURL:[NSURL URLWithString:self.movies.image] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    self.movieRating.text = [NSString stringWithFormat:@"%.2lf", self.movies.rating];
+    self.movieReleaseYear.text = [NSString stringWithFormat:@"%d", self.movies.releaseYear];
+    self.movieGenre.text = [self.movies.genre componentsJoinedByString:@", "];
     // Do any additional setup after loading the view.
 }
 

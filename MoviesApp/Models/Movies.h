@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *title;
 @property NSString *image;
-@property double *rating;
+@property double rating;
 @property int releaseYear;
 @property NSArray *genre;
     
