@@ -15,6 +15,7 @@
 		4D20BF28291AF4DF008C39D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D20BF26291AF4DF008C39D4 /* LaunchScreen.storyboard */; };
 		4D20BF2B291AF4DF008C39D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D20BF2A291AF4DF008C39D4 /* main.m */; };
 		4D20BF38291AF816008C39D4 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D20BF37291AF816008C39D4 /* NetworkManager.m */; };
+		4D20BF3C291AFA0A008C39D4 /* Movies.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D20BF3B291AFA0A008C39D4 /* Movies.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		4D20BF2A291AF4DF008C39D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D20BF36291AF816008C39D4 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		4D20BF37291AF816008C39D4 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		4D20BF3A291AFA0A008C39D4 /* Movies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movies.h; sourceTree = "<group>"; };
+		4D20BF3B291AFA0A008C39D4 /* Movies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movies.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		4D20BF17291AF4DB008C39D4 /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				4D20BF39291AF9EF008C39D4 /* Models */,
 				4D20BF31291AF6C9008C39D4 /* Services */,
 				4D20BF26291AF4DF008C39D4 /* LaunchScreen.storyboard */,
 				4D20BF21291AF4DC008C39D4 /* Main.storyboard */,
@@ -95,6 +99,15 @@
 				4D20BF37291AF816008C39D4 /* NetworkManager.m */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		4D20BF39291AF9EF008C39D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D20BF3A291AFA0A008C39D4 /* Movies.h */,
+				4D20BF3B291AFA0A008C39D4 /* Movies.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D20BF3C291AFA0A008C39D4 /* Movies.m in Sources */,
 				4D20BF20291AF4DC008C39D4 /* ViewController.m in Sources */,
 				4D20BF1A291AF4DC008C39D4 /* AppDelegate.m in Sources */,
 				4D20BF2B291AF4DF008C39D4 /* main.m in Sources */,
