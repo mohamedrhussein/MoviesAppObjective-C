@@ -6,6 +6,9 @@
 //
 
 #import "HomeViewController.h"
+#import "SDWebImage.h"
+#import "Movies.h"
+#import "DetailsViewController.h"
 
 @interface HomeViewController ()
 
@@ -56,7 +59,30 @@
     NSDictionary *current_dict = _movies[indexPath.row];
     cell.textLabel.text = [current_dict objectForKey:@"title"];
     
+    NSString *image_str = [current_dict objectForKey:@"image"];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:image_str] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    cell.imageView.layer.cornerRadius = 28;
+    cell.imageView.layer.masksToBounds = true;
+    
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    NSDictionary *current_dict = _movies[self.tableView.indexPathForSelectedRow.row];
+   
+    Movies *movie = [Movies new];
+    movie.title = [current_dict objectForKey:@"title"];
+    movie.image = [current_dict objectForKey:@"image"];
+    movie.rating = [[current_dict objectForKey:@"rating"] doubleValue];
+    movie.releaseYear = [[current_dict objectForKey:@"releaseYear"] intValue];
+    movie.genre = [current_dict objectForKey:@"genre"];
+    
+    ((DetailsViewController*) segue.destinationViewController).movies = movie;
 }
 /*
 #pragma mark - Navigation

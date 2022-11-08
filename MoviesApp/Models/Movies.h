@@ -9,14 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Movies : NSObject{
+@interface Movies : NSObject
 
-    NSString *title;
-    NSString *image;
-    double *rating;
-    int releaseYear;
-    NSArray *genre;
-}
+@property NSString *title;
+@property NSString *image;
+@property double *rating;
+@property int releaseYear;
+@property NSArray *genre;
+    
 @end
 
 NS_ASSUME_NONNULL_END
